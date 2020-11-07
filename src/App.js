@@ -1,25 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React,{useState}from 'react';
+import Header from './components/header/header'
+import profileImg from './profile.jpg';
+import SideBar from './components/sidebar/sidebar'
+import RecommendedVideos from './components/videos/recommended-videos/recommended-videos'
+import {BrowserRouter,Route} from 'react-router-dom';
+ 
 function App() {
+
+  //This state show or hide the sidebar
+  const [ShowIt, SetShowIt] = useState(false)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+    <BrowserRouter>
+      <Header img={profileImg} show={ShowIt} setShow={SetShowIt}/>
+      <SideBar show={ShowIt}/>
+      <Route path="/" exact component={RecommendedVideos}/>
+      <Route path="/searh/:text" component=""/>
+    </BrowserRouter>
+  </>
   );
 }
 
