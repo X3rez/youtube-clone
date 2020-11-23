@@ -1,3 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+this is the priview 
 
-https://raw.githubusercontent.com/X3rez/youtube-clone/master/preview.png
+![Aquí la descripción de la imagen por si no carga](https://raw.githubusercontent.com/X3rez/youtube-clone/master/preview.png)
+
