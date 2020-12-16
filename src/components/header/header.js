@@ -35,9 +35,17 @@ function Header ({img,show,setShow}){
                 </div>
 
                 <div className='navigation__icons-container'>
-                    <IconButton> <VideoCallIcon/> </IconButton>
-                    <IconButton><AppsIcon /> </IconButton>
-                    <IconButton> <NotificationsIcon/> </IconButton>
+                    <IconButton> 
+                        <VideoCallIcon/> 
+                    </IconButton>
+
+                    <IconButton>
+                        <AppsIcon />
+                    </IconButton>
+                    
+                    <IconButton>
+                         <NotificationsIcon/>
+                    </IconButton>
                     <Avatar className="navigation__avatar" alt="Profile img" src={img} />
                 </div>
             </nav>

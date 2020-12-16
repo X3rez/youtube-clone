@@ -48,7 +48,7 @@ function SideBar ({show}) {
        <>      
          <aside className={show ? "sidebar show" : "sidebar"}>
 
-            <SidebarItem to="/" text="Home" icon={<HomeIcon className="sidebar__icon"/>}/>
+            <SidebarItem to="/youtube-clone" text="Home" icon={<HomeIcon className="sidebar__icon"/>}/>
             <SidebarItem to="/trending" text="Trending" icon={<WhatshotIcon className="sidebar__icon"/>}/>
             <SidebarItem to="/subscriptions" text="Subscriptions" icon={<SubscriptionsIcon className="sidebar__icon"/>}/>
                
