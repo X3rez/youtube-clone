@@ -1,9 +1,9 @@
-import React,{useState}from 'react';
+import React,{useState} from 'react';
 import Header from './components/header/header'
 import profileImg from './profile.jpg';
 import SideBar from './components/sidebar/sidebar'
 import RecommendedVideos from './components/videos/recommended-videos/recommended-videos'
-import {BrowserRouter,Route, Switch} from 'react-router-dom';
+import {BrowserRouter,Route} from 'react-router-dom';
  
 function App() {
 
