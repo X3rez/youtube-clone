@@ -15,7 +15,7 @@ function App() {
     <BrowserRouter>
         <Header img={profileImg} show={ShowIt} setShow={SetShowIt}/>
         <SideBar show={ShowIt}/>
-        <Route path="/youtube-clone" component={RecommendedVideos}/>
+        <Route path="/" component={RecommendedVideos}/>
         <Route path="/searh/:text" component=""/>
     </BrowserRouter>
   </>
